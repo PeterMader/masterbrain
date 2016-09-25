@@ -131,22 +131,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const colorButton = document.createElement('div')
     const thisColorIndex = colorIndex
     colorButton.style.background = COLORS[colorIndex]
-    colorButton.style.height = colorButton.style.width = '50px'
-    colorButton.style.display = 'inline-block'
-    colorButton.style.border = '2px solid #FFFFFF'
+    colorButton.classList.add('color-button')
     colorSelector.appendChild(colorButton)
 
     colorButton.addEventListener('click', () => {
-      game.colorButton.style.border = '2px solid #FFFFFF'
+      game.colorButton.classList.remove('color-button-selected')
       game.colorButton = colorButton
       game.selectedColor = COLORS[thisColorIndex]
-      colorButton.style.border = '2px solid #000000'
+      colorButton.classList.add('color-button-selected')
     })
 
     if (thisColorIndex === 0) {
       game.colorButton = colorButton
       game.selectedColor = COLORS[0]
-      colorButton.style.border = '2px solid #000000'
+      colorButton.classList.add('color-button-selected')
     }
   }
 
