@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const FIELD_SIZE = 40
   const MAX_ATTEMPTS = 10
 
-  const COLORS = ['#212121', '#fafafa', '#8d6e63', '#f44336', '#4caf50', '#0d47a1', '#ffeb3b', '#ab47bc']
+  const COLORS = ['#ffeb3b', '#f44336', '#ab47bc', '#0d47a1', '#0097a7', '#1b5e20', '#9ccc65', '#212121']
   const IS_CORRECT = '#388e3c'
   const IS_INCLUDED = '#ffeb3b'
   const IS_NOT_INCLUDED = '#f44336'
