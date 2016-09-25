@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Masterbrain</title>
+    <link rel="stylesheet" href="style.css" media="screen">
     <script src="masterbrain.js" charset="utf-8"></script>
     <script>
       window.DEBUG = true
@@ -10,10 +11,12 @@
   </head>
   <body>
 
-    <div id="colors"></div>
-    <canvas id="canvas" width="300" height="500"></canvas>
-    <div id="attempt">OK</div>
-    <div id="restart">Restart the game!</div>
+    <div id="wrapper">
+      <div id="colors"></div>
+      <canvas id="canvas" width="400" height="450"></canvas>
+      <div id="attempt" class="button">Try</div>
+      <div id="restart" class="button">Restart the game</div>
+    </div>
 
   </body>
 </html>
