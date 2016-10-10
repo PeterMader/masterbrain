@@ -3,36 +3,40 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: #f5f5f5;
-  font-family: sans-serif;
+  background: #616161;
+  font-family: 'Verdana', sans-serif;
+  font-weight: bold;
+  color: #eeeeee;
 }
 
-#wrapper {
+#game {
   position: absolute;
   top: 0;
   height: calc(100% - 20px);
   left: calc(50% - 210px);
   width: 400px;
   padding: 10px;
-  background: #eeeeee;
+  background: #e0e0e0;
+}
+
+#game.faded-out {
+  filter: blur(1px);
 }
 
 .button {
   background: #ff8f00;
   display: inline-block;
-  padding: 5px 10px;
-  font-weight: bold;
   margin-left: 4px;
+  line-height: 48px;
+  padding: 0 10px;
   border-radius: 2px;
   text-transform: uppercase;
-  color: #eeeeee;
   box-shadow: 1px 1px 3px #a8a8a8;
 }
 
 .color-button {
   display: inline-block;
   width: 48px;
-  height: 48px;
   margin: 1px;
   border-radius: 25px;
 }
@@ -44,4 +48,28 @@ html, body {
 .button,
 .color-button {
   cursor: pointer;
+  height: 48px;
+}
+
+#message {
+  position: absolute;
+  height: 160px;
+  width: 360px;
+  padding: 20px;
+  left: calc(50% - 200px);
+  top: calc(50% - 100px);
+  display: none;
+  background: rgba(255, 134, 0, 0.8);
+}
+
+#message .button {
+  background: #eeeeee;
+  color: #ff8f00;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#message.msg-active {
+  display: block;
 }
